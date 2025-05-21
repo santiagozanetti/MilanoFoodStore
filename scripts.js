@@ -1,61 +1,61 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Custom cursor
-  const cursor = document.querySelector(".cursor");
-  const cursorFollower = document.querySelector(".cursor-follower");
+  // const cursor = document.querySelector(".cursor");
+  // const cursorFollower = document.querySelector(".cursor-follower");
 
-  if (window.innerWidth > 992) {
-    document.addEventListener("mousemove", function (e) {
-      cursor.style.opacity = "1";
-      cursorFollower.style.opacity = "1";
+  // if (window.innerWidth > 992) {
+  //   document.addEventListener("mousemove", function (e) {
+  //     cursor.style.opacity = "1";
+  //     cursorFollower.style.opacity = "1";
 
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
+  //     cursor.style.left = e.clientX + "px";
+  //     cursor.style.top = e.clientY + "px";
 
-      cursorFollower.style.left = e.clientX + "px";
-      cursorFollower.style.top = e.clientY + "px";
-    });
+  //     cursorFollower.style.left = e.clientX + "px";
+  //     cursorFollower.style.top = e.clientY + "px";
+  //   });
 
-    document.addEventListener("mousedown", function () {
-      cursor.style.width = "12px";
-      cursor.style.height = "12px";
-      cursorFollower.style.width = "30px";
-      cursorFollower.style.height = "30px";
-    });
+  //   document.addEventListener("mousedown", function () {
+  //     cursor.style.width = "12px";
+  //     cursor.style.height = "12px";
+  //     cursorFollower.style.width = "30px";
+  //     cursorFollower.style.height = "30px";
+  //   });
 
-    document.addEventListener("mouseup", function () {
-      cursor.style.width = "8px";
-      cursor.style.height = "8px";
-      cursorFollower.style.width = "40px";
-      cursorFollower.style.height = "40px";
-    });
+  //   document.addEventListener("mouseup", function () {
+  //     cursor.style.width = "8px";
+  //     cursor.style.height = "8px";
+  //     cursorFollower.style.width = "40px";
+  //     cursorFollower.style.height = "40px";
+  //   });
 
-    // Cursor hover effect on links and buttons
-    const links = document.querySelectorAll(
-      "a, button, .gallery-item, .menu-item"
-    );
-    links.forEach((link) => {
-      link.addEventListener("mouseenter", () => {
-        cursor.style.width = "0";
-        cursor.style.height = "0";
-        cursorFollower.style.width = "60px";
-        cursorFollower.style.height = "60px";
-        cursorFollower.style.borderColor = "var(--primary-color)";
-        cursorFollower.style.backgroundColor = "rgba(198, 40, 40, 0.1)";
-      });
+  //   // Cursor hover effect on links and buttons
+  //   const links = document.querySelectorAll(
+  //     "a, button, .gallery-item, .menu-item"
+  //   );
+  //   links.forEach((link) => {
+  //     link.addEventListener("mouseenter", () => {
+  //       cursor.style.width = "0";
+  //       cursor.style.height = "0";
+  //       cursorFollower.style.width = "60px";
+  //       cursorFollower.style.height = "60px";
+  //       cursorFollower.style.borderColor = "var(--primary-color)";
+  //       cursorFollower.style.backgroundColor = "rgba(198, 40, 40, 0.1)";
+  //     });
 
-      link.addEventListener("mouseleave", () => {
-        cursor.style.width = "8px";
-        cursor.style.height = "8px";
-        cursorFollower.style.width = "40px";
-        cursorFollower.style.height = "40px";
-        cursorFollower.style.borderColor = "var(--primary-color)";
-        cursorFollower.style.backgroundColor = "transparent";
-      });
-    });
-  } else {
-    cursor.style.display = "none";
-    cursorFollower.style.display = "none";
-  }
+  //     link.addEventListener("mouseleave", () => {
+  //       cursor.style.width = "8px";
+  //       cursor.style.height = "8px";
+  //       cursorFollower.style.width = "40px";
+  //       cursorFollower.style.height = "40px";
+  //       cursorFollower.style.borderColor = "var(--primary-color)";
+  //       cursorFollower.style.backgroundColor = "transparent";
+  //     });
+  //   });
+  // } else {
+  //   cursor.style.display = "none";
+  //   cursorFollower.style.display = "none";
+  // }
 
   // Mobile Menu Toggle
   const menuToggle = document.querySelector(".menu-toggle");
