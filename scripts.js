@@ -504,3 +504,41 @@ document.addEventListener("DOMContentLoaded", function () {
     faqItems[0].classList.add("active");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Función para mostrar el botón de WhatsApp después de 3 segundos
+  setTimeout(function () {
+    const whatsappFloat = document.querySelector(".whatsapp-float");
+    if (whatsappFloat) {
+      whatsappFloat.style.opacity = "1";
+      whatsappFloat.style.transform = "translateY(0)";
+    }
+  }, 3000);
+
+  // Detectar si es móvil para ajustar el enlace
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const whatsappLink = document.querySelector(".whatsapp-float");
+
+  if (whatsappLink && isMobile) {
+    // Mantener el mismo enlace pero asegurar que se abra en la app en móviles
+    const currentHref = whatsappLink.getAttribute("href");
+    whatsappLink.setAttribute("href", currentHref);
+    whatsappLink.removeAttribute("target"); // En móviles es mejor abrir directamente en la app
+  }
+
+  // Añadir clase para mostrar el texto en hover en desktop
+  const handleHover = function () {
+    if (window.innerWidth > 768) {
+      this.classList.add("show-text");
+    }
+  };
+
+  const handleLeave = function () {
+    this.classList.remove("show-text");
+  };
+
+  if (whatsappLink) {
+    whatsappLink.addEventListener("mouseenter", handleHover);
+    whatsappLink.addEventListener("mouseleave", handleLeave);
+  }
+});

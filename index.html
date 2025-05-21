@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -21,7 +21,7 @@
     <header>
       <div class="header-container">
         <div class="logo">
-          <span class="logo-text">MILANO</span>
+          <span class="logo-text"><a href="#inicio">MILANO</a></span>
           <span class="logo-accent">Food Store</span>
         </div>
         <nav>
@@ -55,7 +55,7 @@
           </p>
           <div class="hero-buttons">
             <a href="#menu" class="btn-primary">Explorar Menú</a>
-            <a href="#contacto" class="btn-secondary">Cotizar Evento</a>
+            <a href="#contacto" class="btn-outline">Cotizar Evento</a>
           </div>
         </div>
 
@@ -246,7 +246,7 @@
               <div class="menu-item-badge">Popular</div>
             </div>
             <div class="menu-item-content">
-              <h3>Pizza Margherita</h3>
+              <h3>Pesto de Albahaca</h3>
               <p>Salsa de tomate, mozzarella fresca y albahaca</p>
             </div>
             <div class="menu-item-hover">
@@ -270,7 +270,7 @@
               <img src="assets/pizzamenu.jpg" alt="Pizza Prosciutto" />
             </div>
             <div class="menu-item-content">
-              <h3>Pizza Prosciutto</h3>
+              <h3>Rúcula & Jamón Crudo</h3>
               <p>Jamón crudo, rúcula, parmesano y aceite de oliva</p>
             </div>
             <div class="menu-item-hover">
@@ -294,7 +294,7 @@
               <img src="assets/pizzamenu.jpg" alt="Pizza Quattro Formaggi" />
             </div>
             <div class="menu-item-content">
-              <h3>Quattro Formaggi</h3>
+              <h3>Provolone Ahumado</h3>
               <p>Mozzarella, gorgonzola, parmesano y provolone</p>
             </div>
             <div class="menu-item-hover">
@@ -376,7 +376,7 @@
               />
             </div>
             <div class="menu-item-content">
-              <h3>Empanada de Jamón y Queso</h3>
+              <h3>Empanada de Lomo al champignon</h3>
               <p>Jamón cocido y queso mozzarella</p>
             </div>
             <div class="menu-item-hover">
@@ -3444,6 +3444,40 @@
         </div>
       </div>
     </footer>
+    
+
+    <!-- Botón flotante de WhatsApp -->
+    <a
+      href="https://wa.me/1234567890?text=Hola%20MILANO,%20me%20gustaría%20recibir%20información%20sobre%20su%20servicio%20de%20catering%20para%20un%20evento."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      <div class="whatsapp-float-content">
+        <div class="whatsapp-icon">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.5027 3.49786C18.2877 1.28093 15.3063 0 12.1397 0C5.50357 0 0.279053 5.22446 0.279053 11.8606C0.279053 13.9453 0.866557 16.0301 1.89472 17.8202L0.279053 24L6.6729 22.4045C8.46298 23.2865 10.2531 23.7214 12.1397 23.7214C18.7759 23.7214 24.0004 18.4969 24.0004 11.8606C24.0004 8.69407 22.7195 5.71264 20.5027 3.49786ZM12.1397 21.7323C10.3496 21.7323 8.60298 21.2974 7.06357 20.4154L6.67289 20.1211L2.91972 21.0032L3.80178 17.3853L3.50754 16.9946C2.48938 15.3991 1.96472 13.6525 1.96472 11.8606C1.96472 6.24175 6.52083 1.68564 12.1397 1.68564C14.7195 1.68564 17.1529 2.70379 19.0395 4.59036C20.9261 6.47693 21.9442 8.91036 21.9442 11.4902C21.9442 17.1091 17.7588 21.7323 12.1397 21.7323ZM17.6624 14.3361C17.3681 14.1889 15.8875 13.4533 15.5932 13.3061C15.2989 13.1589 15.0834 13.1589 14.8679 13.4533C14.6524 13.7476 14.0649 14.3361 13.8494 14.5516C13.6339 14.7671 13.4184 14.7671 13.1241 14.6199C11.6435 13.8843 10.6254 13.2958 9.60724 11.5998C9.31301 11.0123 9.90051 11.0123 10.4392 9.95093C10.5864 9.73543 10.5864 9.51993 10.4392 9.30443C10.2919 9.08893 9.75724 7.60829 9.46301 7.01964C9.16878 6.43214 8.87455 6.52929 8.65905 6.52929C8.44355 6.52929 8.22805 6.52929 8.01255 6.52929C7.79705 6.52929 7.45939 6.67643 7.16516 6.97064C6.87093 7.26486 6.08878 8.00057 6.08878 9.48121C6.08878 10.9618 7.16516 12.3953 7.31232 12.6108C7.45947 12.8263 9.70051 16.2599 13.1241 17.5937C15.1518 18.4757 15.8875 18.5729 16.7695 18.4257C17.3099 18.3285 18.5466 17.6901 18.8408 17.0043C19.1351 16.3185 19.1351 15.7299 18.9878 15.5144C18.8406 15.2989 18.6251 15.2989 18.3309 15.1516C18.0367 15.0044 17.9566 14.4832 17.6624 14.3361Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <span class="whatsapp-text">¿Consultas? ¡Escribínos!</span>
+      </div>
+      <div class="whatsapp-pulse"></div>
+    </a>
+
+    
+    
 
     <script src="scripts.js"></script>
   </body>
